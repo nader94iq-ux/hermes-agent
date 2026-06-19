@@ -14,7 +14,7 @@ GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 
 # تهيئة ذكاء جوجل الاصطناعي
 genai.configure(api_key=GOOGLE_API_KEY)
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """أمر البدء /start"""
